@@ -40,7 +40,7 @@ THIRD_PARTY_APPS = (
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
-    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
 )
 
 # Apps specific for this project go here.
@@ -102,7 +102,7 @@ MANAGERS = ADMINS
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres://enigmauser:enigmapass@localhost/enigma'),
+    'default': env.db('DATABASE_URL', default='postgres://postgres:margs@localhost/enigma'),
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
@@ -240,6 +240,8 @@ ACCOUNT_ALLOW_REGISTRATION = env.bool('DJANGO_ACCOUNT_ALLOW_REGISTRATION', True)
 ACCOUNT_ADAPTER = 'enigma.users.adapters.AccountAdapter'
 SOCIALACCOUNT_ADAPTER = 'enigma.users.adapters.SocialAccountAdapter'
 ACCOUNT_SIGNUP_FORM_CLASS = 'enigma.users.forms.SignupForm'
+SOCIALACCOUNT_AUTO_SIGNUP=False
+
 
 # Custom user app defaults
 # Select the correct user model

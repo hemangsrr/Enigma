@@ -146,9 +146,8 @@
             {% else %}
             <h2>LOGIN TO GET STARTED</h2>
             <li class="login-button">
-              <a href="{% provider_login_url "facebook" method="oauth2" %}" class="btn btn-default btn-lg">
-                <i class="fa fa-facebook fa-fw"></i>
-                <span class="network-name">Facebook Login</span>
+              <a href="{% provider_login_url "google" method="oauth2" %}" class="btn btn-default btn-lg">
+                <span class="network-name">Login</span>
               </a>
             </li>
             {% endif %}

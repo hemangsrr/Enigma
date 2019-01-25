@@ -2,7 +2,7 @@
 from __future__ import unicode_literals, absolute_import
 
 from django.contrib.auth.models import AbstractUser
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
@@ -20,7 +20,7 @@ class User(AbstractUser):
     date_joined = models.DateTimeField(default=timezone.now)
     date_last_ans = models.DateTimeField(null=True)
 
-    cur_phase = models.ForeignKey(Phase, null=True, default=1)
+    cur_phase = models.ForeignKey(Phase, null=True, default=1,on_delete=models.PROTECT)
     completed_qns = models.ManyToManyField(Question, related_name="compq_related", blank=True)
     cur_qn = models.ForeignKey(Question, null=True, blank=True, related_name="curq_related", on_delete=models.SET_NULL)
 
