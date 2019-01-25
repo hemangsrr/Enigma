@@ -20,7 +20,7 @@ class User(AbstractUser):
     date_joined = models.DateTimeField(default=timezone.now)
     date_last_ans = models.DateTimeField(null=True)
 
-    cur_phase = models.ForeignKey(Phase, null=True, default=1,on_delete=models.PROTECT)
+    cur_phase = models.ForeignKey(Phase, null=True, on_delete=models.PROTECT)
     completed_qns = models.ManyToManyField(Question, related_name="compq_related", blank=True)
     cur_qn = models.ForeignKey(Question, null=True, blank=True, related_name="curq_related", on_delete=models.SET_NULL)
 
