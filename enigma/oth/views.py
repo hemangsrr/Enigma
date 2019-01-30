@@ -74,6 +74,7 @@ class PlayView(FormMixin, DetailView):
     def form_valid(self, form):
         user = self.request.user
         user.completed_qns.add(user.cur_qn)
+        user.date_last_ans = timezone.now()
         user.save()
 
         completed_qns = user.completed_qns
@@ -96,7 +97,7 @@ class PlayView(FormMixin, DetailView):
             cur_qn_id = cur_qn.pk
             user.cur_qn = cur_qn
 
-            user.date_last_ans = timezone.now()
+            #user.date_last_ans = timezone.now()
             user.save()
 
         return super(PlayView, self).form_valid(form)
