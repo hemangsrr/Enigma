@@ -260,5 +260,8 @@ ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+<<<<<<< HEAD
 #TODO: WARNING: Remove thiss
 DEBUG = True
+=======
+>>>>>>> f9d91c027b9ddb664553ac182cc4ecd14e19e11a
