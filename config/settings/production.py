@@ -208,7 +208,13 @@ RAVEN_CONFIG = {
 """
 # Custom Admin URL, use {% url 'admin:index' %}
 ADMIN_URL = env('DJANGO_ADMIN_URL')
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
+sentry_sdk.init(
+    dsn="https://e71ba83af87b406aaad2b58c329099a6@sentry.io/1385116",
+    integrations=[DjangoIntegration()]
+)
 # Your production stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
 
