@@ -4,7 +4,7 @@
 
 
 .intro{
-  background: url(../images/3.jpeg) no-repeat bottom center scroll;
+  background: url(../images/banner1.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15,7 +15,7 @@
 
 @media (max-width: 767px) {
 .intro{
-  background: url(../images/3.jpeg) no-repeat bottom center scroll;
+  background: url(../images/banner1.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: contain;
   -moz-background-size: contain;
