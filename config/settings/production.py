@@ -44,7 +44,7 @@ MIDDLEWARE = RAVEN_MIDDLEWARE + MIDDLEWARE
 
 # Use Whitenoise to serve static files
 # See: https://whitenoise.readthedocs.io/
-WHITENOISE_MIDDLEWARE = ('whitenoise.middleware.WhiteNoiseMiddleware', )
+WHITENOISE_MIDDLEWARE = ('django.middleware.security.SecurityMiddleware','whitenoise.middleware.WhiteNoiseMiddleware', )
 MIDDLEWARE = WHITENOISE_MIDDLEWARE + MIDDLEWARE
 
 """
