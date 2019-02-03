@@ -15,11 +15,11 @@
 
 @media (max-width: 767px) {
 .intro{
-  background: url(../images/banner1.jpg) no-repeat bottom center scroll;
+  background: url(../images/banner1.jpg) no-repeat center center fixed;
   background-color: black;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  -o-background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover ;
 }
 }
