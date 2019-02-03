@@ -13,7 +13,7 @@ import os
 import environ
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-APPS_DIR = os.path.join(BASE_DIR, 'enigma')
+APPS_DIR = os.path.join(ROOT_DIR, 'enigma')
 
 env = environ.Env()
 env.read_env()
