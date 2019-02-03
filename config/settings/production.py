@@ -47,7 +47,7 @@ MIDDLEWARE = RAVEN_MIDDLEWARE + MIDDLEWARE
 WHITENOISE_MIDDLEWARE = ('django.middleware.security.SecurityMiddleware','whitenoise.middleware.WhiteNoiseMiddleware', )
 MIDDLEWARE = WHITENOISE_MIDDLEWARE + MIDDLEWARE
 
-"""
+
 # SECURITY CONFIGURATION
 # ------------------------------------------------------------------------------
 # See https://docs.djangoproject.com/en/1.9/ref/middleware/#module-django.middleware.security
@@ -69,7 +69,7 @@ SECURE_SSL_REDIRECT = env.bool('DJANGO_SECURE_SSL_REDIRECT', default=True)
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_HTTPONLY = True
 X_FRAME_OPTIONS = 'DENY'
-"""
+
 
 # SITE CONFIGURATION
 # ------------------------------------------------------------------------------
