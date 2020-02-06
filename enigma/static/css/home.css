@@ -13,7 +13,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 .intro{
   background: url(../images/banner1.jpg) no-repeat center center fixed;
   background-color: black;
@@ -22,4 +22,16 @@
   background-size: cover;
   -o-background-size: cover ;
 }
+
+h1.title{
+  font-size: 60px!important;
+  text-transform: uppercase!important;
+}
+
+}
+
+
+h1.title{
+  font-size: 100px;
+  text-transform: none;
 }
