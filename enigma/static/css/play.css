@@ -17,6 +17,9 @@ body {
   color: white;
 }
 
+.blackbutton{
+  color: :black;
+}
 
 .tabContent{
   padding: 8px;
