@@ -16,7 +16,7 @@ class Question(models.Model):
     clue = models.TextField(blank=True)
     image = models.URLField(blank=True)
     answer = models.CharField(blank=False, max_length=255)
-    #phase = models.ForeignKey(Phase, null=True,on_delete=models.PROTECT)
+    phase = models.ForeignKey(Phase, null=True,on_delete=models.PROTECT)
 
     original_phase = None
 
