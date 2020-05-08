@@ -17,7 +17,6 @@ from django.utils import six
 
 import logging
 
-from .storage import * as enigma.storage
 
 from .common import *  # noqa
 
@@ -95,7 +94,7 @@ INSTALLED_APPS += (
 
 # Static Assets
 # ------------------------
-STATICFILES_STORAGE = 'enigma.storage.WhiteNoiseStaticFilesStorage'
+STATICFILES_STORAGE = 'storage.WhiteNoiseStaticFilesStorage'
 
 
 """
