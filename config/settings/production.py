@@ -16,7 +16,7 @@ from __future__ import absolute_import, unicode_literals
 from django.utils import six
 
 import logging
-
+import .storage as enigma.storage
 
 from .common import *  # noqa
 
@@ -94,7 +94,7 @@ INSTALLED_APPS += (
 
 # Static Assets
 # ------------------------
-STATICFILES_STORAGE = '.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'enigma.storage.WhiteNoiseStaticFilesStorage'
 
 
 """
