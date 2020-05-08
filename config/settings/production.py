@@ -94,7 +94,7 @@ INSTALLED_APPS += (
 
 # Static Assets
 # ------------------------
-STATICFILES_STORAGE = 'enigma.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = '.storage.CompressedManifestStaticFilesStorage'
 
 
 """
