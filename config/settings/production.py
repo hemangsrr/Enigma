@@ -94,7 +94,7 @@ INSTALLED_APPS += (
 
 # Static Assets
 # ------------------------
-STATICFILES_STORAGE = 'storage.WhiteNoiseStaticFilesStorage'
+STATICFILES_STORAGE = 'enigma.config.settings.storage.WhiteNoiseStaticFilesStorage'
 
 
 """
